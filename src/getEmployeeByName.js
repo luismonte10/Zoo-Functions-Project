@@ -6,11 +6,11 @@ function getEmployeeByName(employeeName) {
   let funcionario = {};
   for (let i = 0; i < employees.length; i += 1) {
     if (employees[i].firstName === employeeName) {
-      funcionario = employees.filter((teste) => teste.firstName === employeeName);
+      funcionario = employees.filter((employee) => employee.firstName === employeeName);
       return funcionario[0];
     }
     if (employees[i].lastName === employeeName) {
-      funcionario = employees.filter((teste) => teste.lastName === employeeName);
+      funcionario = employees.filter((employee) => employee.lastName === employeeName);
       return funcionario[0];
     }
   }

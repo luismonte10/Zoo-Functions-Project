@@ -3,13 +3,13 @@ const data = require('../data/zoo_data');
 
 function getSpeciesByIds(...ids) {
   // seu código aqui
-  const animal = [];
-  const sera = [...ids];
-  if (ids === undefined) return animal;
-  for (let i = 0; i < sera.length; i += 1) {
-    animal.push(species.find((teste) => teste.id === sera[i]));
+  const animals = [];
+  const arrayIds = [...ids];
+  if (ids === undefined) return animals;
+  for (let i = 0; i < arrayIds.length; i += 1) {
+    animals.push(species.find((animal) => animal.id === arrayIds[i]));
   }
-  return animal;
+  return animals;
 }
 
 module.exports = getSpeciesByIds;
